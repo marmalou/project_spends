@@ -1,0 +1,35 @@
+.center {
+  text-align: center;
+}
+
+.image {
+  background-image: url("https://www.mrcooper.com/blog/wp-content/uploads/5-free-budgeting-apps-to-help-you-save-smarter-1110x400.jpg");
+  width: 100%;
+  height:400px;
+  color: white;
+  font-size: 3em;
+
+}
+.image h1 {
+ margin: 0;
+}
+
+.image h2 {
+ margin: 0;
+}
+
+nav ul  {
+  list-style:none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  font-size: 20px;
+  color: black;
+  font-family: 'Arimo', sans-serif;
+}
+
+body {
+  background-color: #00daff;
+}

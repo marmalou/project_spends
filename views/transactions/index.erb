@@ -1,0 +1,11 @@
+
+<p>All the transactions</p>
+
+<% @transactions.each do |transaction| %>
+  <p>Merchant: <%= transaction.merchant.name() %> </p>
+  <p>Type: <%= transaction.type.name() %> </p>
+  <p>Cost: <%= transaction.cost %> </p>
+  <hr/>
+<% end %>
+
+<p>Total: <%= @transactions_total %> </p>

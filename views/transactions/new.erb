@@ -1,0 +1,27 @@
+<form action="/transactions" method="post">
+
+
+  <label for="cost">Cost:</label>
+  <input type="text" name="cost" id="cost">
+
+
+
+   <select name="merchant_id">
+     <% for merchant in @merchants %>
+     <option value="<%= merchant.id %>"><%= merchant.name %></option>
+     <% end %>
+   </select>
+
+
+    <label>
+<select name="type_id">
+    <% for type in @types %>
+    <option value="<%= type.id %>"><%= type.name %></option>
+    <% end %>
+  </select>
+</label>
+
+
+  <input type="submit" value="Add transaction">
+
+</form>

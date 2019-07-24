@@ -1,0 +1,15 @@
+<p>All the types</p>
+
+<% @types.each do |type| %>
+
+  <p>Type: <%= type.name() %> </p>
+
+  <a href="/types/<%= type.id %>/edit">Edit</a>
+
+  <form class="" action="/types/<%= type.id %>/delete" method="post">
+    <input type="submit" value="Delete">
+  </form>
+
+  <hr/>
+
+<% end %>
